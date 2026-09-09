@@ -10,10 +10,8 @@
 @endsection
 
  
-  <!--==========ThemesBazar=============
-                        Section-One Start
-                    ==============ThemesBazar============-->
-        <div class="all-section" ><!-- All Section-->
+
+        <div class="all-section" >
 
             <section class="single-page">
                 <div class="container">
@@ -204,7 +202,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-4">
-                            <div class="sitebar-fixd" style="position: sticky; top: 0;"><!-- Fixd Siteber -->
+                            <div class="sitebar-fixd" style="position: sticky; top: 0;">
                         
                             
                                     
@@ -212,7 +210,7 @@
                                    
 
 
-                            <!-- recommened_content Start -->
+                        
 							                 @php
 				$popular=DB::table('posts')->inRandomOrder()->orderBy('id','DESC')->where('is_feature',1)->limit(6)->get();
 				@endphp    
@@ -240,11 +238,7 @@
                                      @endforeach  
 								
                                                                      </div>
-                            <!-- most poular item End -->
-
-
-
-                            <!-- recommened_content Start -->
+                          
                             <h4 class="recommened_title">
                                  সর্বশেষ সংবাদ
                             </h4>
@@ -275,7 +269,7 @@
 								
 								
                                                                      </div>
-                            <!-- most poular item End -->
+                    
 
 
                             
@@ -296,7 +290,7 @@
                 </div>
             </section>
 
-        </div><!-- All Section Close -->
+        </div>
 
  
  
